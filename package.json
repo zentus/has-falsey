@@ -1,0 +1,19 @@
+{
+  "name": "has-falsey",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "should": "^13.2.3"
+  },
+  "scripts": {
+    "build": "babel source/index.js --out-file dist/index.js",
+    "test": "node test"
+  },
+  "keywords": [],
+  "author": "zentus",
+  "license": "MIT"
+}
