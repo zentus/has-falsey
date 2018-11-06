@@ -1,3 +1,8 @@
-const hasFalsey = array => Array.isArray(array) ? array.filter(item => !item).length > 0 : console.error(`has-falsey expected an array, got "${array}"`)
+const hasFalsey = input => {
+	if (Array.isArray(input)) {
+		return !!input.filter(item => !item).length
+	}
+	throw new Error(`has-falsey expected an array, got "${input}". typeof: ${typeof input}`)
+}
 
 module.exports = hasFalsey

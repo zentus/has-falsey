@@ -1,6 +1,6 @@
 ## has-falsey
 
-Takes an array, and returns true if it contains one or more falsey items
+Takes an array, returns true if it contains one or more falsey items, otherwise returns false.
 
 ### Installation
 ```bash
@@ -17,6 +17,9 @@ hasFalsey(['one', 'is', false])
 
 hasFalsey(['one', 'more', 'time'])
 //=> false
+
+hasFalsey({})
+//=> Error: has-falsey expected an array, got "[object Object]". typeof: object
 ```
 
 ### License
